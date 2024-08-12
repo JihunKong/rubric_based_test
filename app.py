@@ -1,7 +1,7 @@
 import streamlit as st
 import json
 import pandas as pd
-import openai
+from openai import OpenAI
 
 # OpenAI API 키 설정
 client = OpenAI(api_key=st.secrets["openai"]["api_key"])
