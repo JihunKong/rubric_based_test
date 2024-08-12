@@ -4,7 +4,7 @@ import pandas as pd
 import openai
 
 # OpenAI API 키 설정
-openai.api_key = st.secrets["openai_api_key"]
+client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 
 # JSON 파일 업로드 및 파싱
 def load_rubric(uploaded_file):
